@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/moonboss.mp3-b309cba0bfd9bc73430430a8c6107551.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/moonboss.mp3"
+dest_files=[ "res://.import/moonboss.mp3-b309cba0bfd9bc73430430a8c6107551.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
