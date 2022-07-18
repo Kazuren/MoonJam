@@ -9,6 +9,7 @@ var active_sfx: int = 0
 func play_music(wav: Resource, position: float = 0.0):
 	music_player.stream = wav
 	music_player.play(position)
+	return music_player
 
 
 func get_current_music() -> AudioStream:
@@ -25,8 +26,8 @@ func stop_music() -> float:
 
 
 func play_effect(wav: Resource, pitch_scale: float = 1.0, audio_position = null):
-	 # If there are 42 or more simultaneous sounds playing we should skip
-	if active_sfx >= 42:
+	 # If there are 64 or more simultaneous sounds playing we should skip
+	if active_sfx >= 64:
 		return null
 	
 	var audio_player

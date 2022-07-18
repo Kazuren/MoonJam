@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Shaders/energybeam.shader" type="Shader" id=3]
 [ext_resource path="res://src/Nodes/Boss/Moon/Moon.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Shaders/white.shader" type="Shader" id=5]
-[ext_resource path="res://src/Scenes/Level 5/headman.png" type="Texture" id=6]
+[ext_resource path="res://src/Scenes/Level 5/headman2.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 

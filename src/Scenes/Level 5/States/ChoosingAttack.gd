@@ -113,17 +113,18 @@ func _on_ChooseAttackTimer_timeout(data) -> void:
 	var attack_index: int = Globals.RNG.randi_range(0, _attacks.size() - 1)
 	var attack: String = _attacks[attack_index]
 	
-	
 	#while previous_attacks_chosen.count(attack) >= 1:
 	#	attack_index = Globals.RNG.randi_range(0, _attacks.size() - 1)
 	#	attack = _attacks[attack_index]
 	
 	
 	previous_attacks_chosen.append(attack)
+	
 	state_machine.change(attack)
 	attacks_done += 1
 
 
 func exit() -> void:
 	if previous_attacks_chosen.size() > 1:
-		previous_attacks_chosen.pop_back()
+		#previous_attacks_chosen.shuffle()
+		previous_attacks_chosen.pop_front()

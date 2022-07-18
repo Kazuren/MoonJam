@@ -7,7 +7,7 @@ var Tentacle = preload("res://src/Scenes/Level 5/Tentacle/Tentacle.tscn")
 var tentacles = []
 
 var attack_texture = preload("res://src/Scenes/Level 5/headmanattacc.png")
-var normal_texture = preload("res://src/Scenes/Level 5/headman.png")
+var normal_texture = preload("res://src/Scenes/Level 5/headman2.png")
 
 var tentacle_start_animation_time: float = 1.25
 

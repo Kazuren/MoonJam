@@ -40,7 +40,8 @@ func _ready() -> void:
 	if !Globals.from_retry:
 #		Globals.progress = 2
 #		Globals.save_data()
-		#Audio.play_music(moonboss_intro)
+		var player = Audio.play_music(moonboss_intro)
+		player.connect("finished", self, "_on_AudioPlayer_finished", [], CONNECT_ONESHOT)
 		var dialog = Dialogic.start("BossFightStart")
 		dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 		dialog.connect("timeline_end", self, "on_Dialog_timeline_end")
@@ -55,6 +56,10 @@ func _ready() -> void:
 	
 	add_to_group("enemies")
 	boss_entity.connect("death", self, "_on_boss_dead")
+
+
+func _on_AudioPlayer_finished() -> void:
+	Audio.play_music(music)
 
 
 func add_to_path() -> void:
