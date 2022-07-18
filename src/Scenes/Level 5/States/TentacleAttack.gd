@@ -30,8 +30,8 @@ func enter(data: Dictionary = {}) -> void:
 		return
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
 		tentacle_attack_time = 0.75
-		tentacle_start_animation_time = 1.0
-		tentacle_attack_delay_time = 0.5
+		tentacle_start_animation_time = 1.05
+		tentacle_attack_delay_time = 0.55
 		tentacle_pull_back_time = 1.0
 		tentacle_pull_back_delay_time = 1.0
 		horizontal_tentacle_count = 2

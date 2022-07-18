@@ -1,8 +1,8 @@
 extends PlayerState
 
 
-var duration: float = 0.2
-var parry_duration: float = 0.1
+var duration: float = 0.15
+var parry_duration: float = 0.15
 var time: float = 0.0
 
 const sfx = preload("res://Assets/Audio/SFX/playerParry.wav")
