@@ -13,8 +13,8 @@ onready var exit = $CenterContainer/VBoxContainer/VBoxContainer/ExitButton
 
 func _ready() -> void:
 	# if not playing main menu music, play main menu music
-	if Audio.get_current_music() != MUSIC:
-		Audio.play_music(MUSIC)
+	#if Audio.get_current_music() != MUSIC:
+	#	Audio.play_music(MUSIC)
 	#if Input.get_connected_joypads().size() > 0:
 	play.grab_focus()
 	

@@ -27,7 +27,7 @@ func stop_music() -> float:
 func play_effect(wav: Resource, pitch_scale: float = 1.0, audio_position = null):
 	 # If there are 42 or more simultaneous sounds playing we should skip
 	if active_sfx >= 42:
-		return
+		return null
 	
 	var audio_player
 	var node
@@ -48,6 +48,7 @@ func play_effect(wav: Resource, pitch_scale: float = 1.0, audio_position = null)
 	active_sfx += 1
 	audio_player.connect("finished", self, "_on_Audio_player_finished", [audio_player, node])
 	audio_player.connect("tree_exiting", self, "_on_Audio_player_tree_exiting")
+	return audio_player
 
 
 func _on_Audio_player_finished(audio_player, node) -> void:

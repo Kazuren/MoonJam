@@ -13,7 +13,7 @@ extends BossState
 #var tentacle_pull_back_delay_time: float = 1.0
 
 const Bullet = preload("res://src/Nodes/Environment/Projectiles/ArcedRockBullet/ArcedRockBullet.tscn")
-
+const sfx = preload("res://Assets/Audio/SFX/you_will_never_be_japanesedistort.wav")
 #onready var tween = $Tween
 
 var state_time: float = 6.0
@@ -34,6 +34,9 @@ func _ready() -> void:
 func enter(data: Dictionary = {}) -> void:
 	if !is_instance_valid(boss.boss_entity):
 		return
+	
+	
+	boss.current_sfx = Audio.play_effect(sfx, 1.0, boss.boss_entity.global_position)
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
 		number_of_attacks = 24
 		parriable_amount = 23

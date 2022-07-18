@@ -21,6 +21,7 @@ onready var tentacle_positions = $TentaclePositions
 onready var current_path = top_bottom_right_side_path
 onready var boss_path = $Paths/TopBottomRightSidePath/PathFollow2D
 
+var current_sfx = null
 #onready var tilemap = $TileMap
 #onready var camera = $Player/Camera2D
 
@@ -39,7 +40,7 @@ func _ready() -> void:
 	if !Globals.from_retry:
 #		Globals.progress = 2
 #		Globals.save_data()
-		Audio.play_music(moonboss_intro)
+		#Audio.play_music(moonboss_intro)
 		var dialog = Dialogic.start("BossFightStart")
 		dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 		dialog.connect("timeline_end", self, "on_Dialog_timeline_end")
@@ -47,7 +48,8 @@ func _ready() -> void:
 		get_tree().paused = true
 	else:
 		state_machine.change("ChoosingAttack")
-		Audio.play_music(music)
+	
+	#Audio.play_music(music)
 	
 	
 	
@@ -60,6 +62,8 @@ func add_to_path() -> void:
 
 
 func _on_boss_dead() -> void:
+	if current_sfx:
+		current_sfx.stop()
 	disable()
 	if !player.dead:
 		var timer = get_tree().create_timer(0.5, true)

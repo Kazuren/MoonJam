@@ -1,5 +1,7 @@
 extends BossState
 
+const sfx = preload("res://Assets/Audio/SFX/MALDdistort.wav")
+
 
 var Tentacle = preload("res://src/Scenes/Level 5/Tentacle/Tentacle.tscn")
 var tentacles = []
@@ -28,6 +30,8 @@ func _ready() -> void:
 func enter(data: Dictionary = {}) -> void:
 	if !is_instance_valid(boss.boss_entity):
 		return
+	
+	boss.current_sfx = Audio.play_effect(sfx, 1.0, boss.boss_entity.global_position)
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
 		tentacle_attack_time = 0.75
 		tentacle_start_animation_time = 1.05

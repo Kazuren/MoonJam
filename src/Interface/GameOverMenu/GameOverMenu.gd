@@ -23,6 +23,8 @@ func _ready() -> void:
 
 func init(percent) -> void:
 	boss_percent_label.visible = true
+	if percent <= 1:
+		percent = 0.00001
 	boss_percent_label.text = "Boss health: " + str(percent) + "% left"
 
 

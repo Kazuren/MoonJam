@@ -333,6 +333,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "Description"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="DoneButton" type="ToolButton" parent="Menu/SelectItemMenu/VBoxContainer"]
 margin_top = 627.0

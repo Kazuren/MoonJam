@@ -60,8 +60,8 @@ func _ready() -> void:
 		game_interface.visible = false
 	
 	# if not playing main menu music, play main menu music
-	if Audio.get_current_music() != MUSIC:
-		Audio.play_music(MUSIC)
+	#if Audio.get_current_music() != MUSIC:
+	#	Audio.play_music(MUSIC)
 	
 	for level in levels:
 		var button = OptionsButton.instance()

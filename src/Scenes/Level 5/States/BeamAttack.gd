@@ -1,6 +1,6 @@
 extends BossState
 
-
+const sfx = preload("res://Assets/Audio/SFX/im_not_fucking_balddistort.wav")
 const Beam = preload("res://src/Scenes/Level 5/Beam/Beam.tscn")
 
 var state_time: float = 3.0
@@ -16,20 +16,24 @@ var beam_count: int = 0
 var last_beam
 var finished: bool = false
 
+
 func _ready() -> void:
 	pass # Replace with function body.
 
 
 func enter(data: Dictionary = {}) -> void:
-	finished = false
 	if !is_instance_valid(boss.boss_entity):
 		return
+	
+	
+	Audio.play_effect(sfx, 1.0, boss.boss_entity.global_position)
+	
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
 		activation_time = 0.55
 		beams = 5
 		state_time = 5.0
 	
-	
+	finished = false
 	shoot_timer = 0
 	beam_count = 0
 	boss.boss_entity.show_beam()

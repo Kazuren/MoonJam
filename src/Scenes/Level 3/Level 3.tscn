@@ -1,9 +1,10 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://src/Scenes/Level 3/Level 3.gd" type="Script" id=2]
 [ext_resource path="res://src/Nodes/AI/BackAndForthAI/BackAndForthAI.gd" type="Script" id=3]
 [ext_resource path="res://src/Nodes/Enemy/Flappers/Flappers.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Scenes/Level 5/finalscene1.png" type="Texture" id=5]
 [ext_resource path="res://src/Nodes/Enemy/FishMoley/FishMoley.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Nodes/Enemy/Snorpa/Snorpa.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Nodes/Player/Player.tscn" type="PackedScene" id=8]
@@ -107,6 +108,15 @@ script = ExtResource( 2 )
 unlocks = 5
 id = 4
 best_time = 25.0
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 1 )

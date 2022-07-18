@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/moonboss_intro_Loop.wav-b92d54ddbb294c2a42ade0c5a6a520e5.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/moonboss_intro_Loop.wav"
+dest_files=[ "res://.import/moonboss_intro_Loop.wav-b92d54ddbb294c2a42ade0c5a6a520e5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
