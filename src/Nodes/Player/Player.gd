@@ -15,6 +15,7 @@ const MOVEMENTS = {
 	"move_right": 1
 }
 
+const got_hit_sfx = preload("res://Assets/Audio/SFX/player_got_hit.wav")
 const CumBullet: PackedScene = preload("res://src/Nodes/Environment/Projectiles/CumBullet/CumBullet.tscn")
 const DeathEffect = preload("res://src/Nodes/Environment/DeathEffect.tscn")
 
@@ -231,6 +232,9 @@ func special() -> bool:
 func set_health(value: int) -> void:
 	health = min(value, max_health)
 	emit_signal("health_changed", health)
+	if !dead:
+		Audio.play_effect(got_hit_sfx, 1.0, global_position)
+	
 	if health <= 0 and !dead:
 		var death_effect = DeathEffect.instance()
 		death_effect.initialize(sprite.texture)
