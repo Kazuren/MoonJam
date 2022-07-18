@@ -10,7 +10,7 @@ var activation_time: float = 0.65
 var beam_duration: float = 1.0
 
 var attack_delay: float
-var shoot_timer: float
+var shoot_timer: float = 0.0
 
 var beam_count: int = 0
 var last_beam
@@ -28,7 +28,9 @@ func enter(data: Dictionary = {}) -> void:
 		activation_time = 0.55
 		beams = 5
 		state_time = 5.0
-		
+	
+	
+	shoot_timer = 0
 	beam_count = 0
 	boss.boss_entity.show_beam()
 	attack_delay = float(state_time) / float(beams)

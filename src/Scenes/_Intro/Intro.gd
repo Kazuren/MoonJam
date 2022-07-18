@@ -47,6 +47,7 @@ func _process(delta: float) -> void:
 			text_index += 1
 			if text_index == when_to_swap_pictures:
 				texture_rect.texture = swap_texture
+				texture_rect.modulate = Color(1.25, 1.25, 1.25)
 			if text_index == text.size():
 				end()
 				return
