@@ -12,7 +12,7 @@ var when_to_swap_pictures: int = 0
 
 var text = [
 	"Borpa: This is it!? This is the Giga Cum Chalice of Hell 2!? This sad dingy cup!?",
-	"Eddie: I’m afraid so young Borba.",
+	"Eddie: I’m afraid so young Borpa.",
 	"Narrator: Borpa takes a sip from the chalice.",
 	"Borpa: This isn’t even cum! This is just spoiled milk!",
 	"I can’t believe this! What a waste of a journey!",
