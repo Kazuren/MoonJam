@@ -31,7 +31,7 @@ custom_styles/panel = SubResource( 1 )
 collision_layer = 0
 collision_mask = 16
 script = ExtResource( 2 )
-damage = 1
+damage = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource( 2 )
