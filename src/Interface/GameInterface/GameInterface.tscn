@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Interface/GameInterface/GameInterface.gd" type="Script" id=1]
 [ext_resource path="res://src/Interface/GameInterface/heart.tres" type="Texture" id=2]
 [ext_resource path="res://src/Interface/GameInterface/cumstack.tres" type="Texture" id=3]
+[ext_resource path="res://Assets/fonts/montreal/Montreal48Bold.tres" type="DynamicFont" id=4]
 
 [node name="GameInterface" type="Control"]
 pause_mode = 2
@@ -105,36 +106,42 @@ custom_constants/margin_right = 32
 custom_constants/margin_top = 32
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CoinContainer"]
+margin_left = 61.0
 margin_top = 32.0
 margin_right = 208.0
-margin_bottom = 143.0
+margin_bottom = 96.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 custom_constants/separation = 32
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CoinContainer/HBoxContainer"]
-margin_right = 64.0
-margin_bottom = 111.0
+margin_right = 51.0
+margin_bottom = 64.0
 grow_horizontal = 0
 
 [node name="CoinAmount" type="Label" parent="CoinContainer/HBoxContainer/HBoxContainer"]
-margin_top = 16.0
-margin_right = 24.0
-margin_bottom = 95.0
+margin_top = 2.0
+margin_right = 19.0
+margin_bottom = 62.0
 grow_horizontal = 0
+custom_fonts/font = ExtResource( 4 )
 text = "1"
 
 [node name="Label2" type="Label" parent="CoinContainer/HBoxContainer/HBoxContainer"]
-margin_left = 28.0
-margin_top = 16.0
-margin_right = 64.0
-margin_bottom = 95.0
+margin_left = 23.0
+margin_top = 2.0
+margin_right = 51.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 4 )
 text = "x"
 
 [node name="CoinTextureRect" type="TextureRect" parent="CoinContainer/HBoxContainer"]
-margin_left = 96.0
-margin_right = 208.0
-margin_bottom = 111.0
+margin_left = 83.0
+margin_right = 147.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
 size_flags_vertical = 4
 texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
