@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://src/Nodes/SpawnPoint/SpawnPoint.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://src/Nodes/AI/FollowPathAI/FollowPathAI.gd" type="Script" id=15]
 [ext_resource path="res://src/Nodes/Enemy/Flappers/Flappers.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/Nodes/Enemy/JOKA/Joka.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/Scenes/Level 1/factoryscene.png" type="Texture" id=18]
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 32, 1000 )
@@ -114,6 +115,13 @@ script = ExtResource( 8 )
 unlocks = 4
 id = 3
 best_time = 29.0
+
+[node name="Background" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 18 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 1 )

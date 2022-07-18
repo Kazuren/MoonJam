@@ -48,3 +48,14 @@ collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CameraLimit/StaticBody2D"]
 shape = SubResource( 5 )
+
+[node name="Dirt2" type="Sprite" parent="."]
+position = Vector2( 192, 0 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt2"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt2/StaticBody2D"]
+shape = SubResource( 1 )

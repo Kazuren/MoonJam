@@ -113,7 +113,6 @@ best_time = 25.0
 layer = -1
 
 [node name="TextureRect" type="TextureRect" parent="Background"]
-visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 5 )

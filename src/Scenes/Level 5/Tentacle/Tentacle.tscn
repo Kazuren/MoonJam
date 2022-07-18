@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Scenes/Level 5/Tentacle/Tentacle.gd" type="Script" id=1]
 [ext_resource path="res://src/Nodes/Hitboxes and Hurtboxes/Hitbox/Hitbox.gd" type="Script" id=2]
-[ext_resource path="res://src/Scenes/Level 5/headmantenticle.png" type="Texture" id=3]
+[ext_resource path="res://src/Scenes/Level 5/headmantenticle2.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 64.0
