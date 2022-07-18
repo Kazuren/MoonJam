@@ -1,7 +1,7 @@
 extends Control
 
 const SettingsMenu = preload("res://src/Interface/SettingsMenu/SettingsMenu.tscn")
-const MUSIC = preload("res://Assets/Audio/Music/title_screen.wav")
+const MUSIC = preload("res://Assets/Audio/Music/main_menu/white_noise.wav")
 const LoadingScreen = preload("res://src/Interface/LoadingScreen/LoadingScreen.tscn")
 const LevelSelectMenu = preload("res://src/Interface/LevelSelectMenu/LevelSelectMenu.tscn")
 #const ChooseNameMenu = preload("res://src/Interface/Menus/ChooseNameMenu/ChooseNameMenu.tscn")
@@ -13,8 +13,8 @@ onready var exit = $CenterContainer/VBoxContainer/VBoxContainer/ExitButton
 
 func _ready() -> void:
 	# if not playing main menu music, play main menu music
-	#if Audio.get_current_music() != MUSIC:
-	#	Audio.play_music(MUSIC)
+	if Audio.get_current_music() != MUSIC:
+		Audio.play_music(MUSIC)
 	#if Input.get_connected_joypads().size() > 0:
 	play.grab_focus()
 	

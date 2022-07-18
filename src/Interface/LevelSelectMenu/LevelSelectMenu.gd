@@ -5,7 +5,7 @@ const LoadingScreen = preload("res://src/Interface/LoadingScreen/LoadingScreen.t
 const OptionsButton = preload("res://src/Interface/OptionsButton.tscn")
 const PreviouslyPlayedLevelMenu = preload("res://src/Interface/PreviouslyPlayedLevelMenu/PreviouslyPlayedLevelMenu.tscn")
 
-const MUSIC = preload("res://Assets/Audio/Music/title_screen.wav")
+const MUSIC = preload("res://Assets/Audio/Music/main_menu/white_noise.wav")
 
 var levels = [
 	{
@@ -60,8 +60,8 @@ func _ready() -> void:
 		game_interface.visible = false
 	
 	# if not playing main menu music, play main menu music
-	#if Audio.get_current_music() != MUSIC:
-	#	Audio.play_music(MUSIC)
+	if Audio.get_current_music() != MUSIC:
+		Audio.play_music(MUSIC)
 	
 	for level in levels:
 		var button = OptionsButton.instance()
