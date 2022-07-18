@@ -182,7 +182,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Moon Jam"
+config/name="The Giga Cum Chalice of Hell 2"
 run/main_scene="res://src/Main.tscn"
 config/icon="res://icon.png"
 
