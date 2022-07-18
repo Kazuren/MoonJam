@@ -1,5 +1,6 @@
 extends Control
 
+const music = preload("res://Assets/Audio/Music/factory/FactoryThemeFinal.wav")
 
 var text_time_to_read: float = 5.0
 var time_required_for_max_text: float = 1.0
@@ -31,6 +32,7 @@ onready var label = $BlackBar2/MarginContainer/TextLabel
 
 
 func _ready() -> void:
+	Audio.play_music(music)
 	label.text = text[text_index]
 	label.percent_visible = 0
 	var game_interface = Interface.get_node("GameInterface")
