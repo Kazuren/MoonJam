@@ -15,7 +15,7 @@ var when_to_swap_pictures: int = 0
 var text = [
 	"Borpa: At last! I’ve reached the control room!.",
 	"Eddie: Good job young Borpa.",
-	"Eddie: Now you just need to go to the computer, open their navigation software, and set your location to 69, 73, 420.",
+	"Eddie: Now you just need to go to the computer, open the navigation software, and set your location to 69, 73, 420.",
 	"Eddie: That’ll land you very close to the location of the Giga Cum Chalice of Hell 2.",
 	"Eddie: The journey is not yet over.",
 	"Eddie: Reaching the chalice itself from there will be a challenge in its own right.",
