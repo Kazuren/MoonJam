@@ -1,7 +1,7 @@
 extends Equipment
 
 const CumMissile = preload("res://src/Nodes/Environment/Projectiles/CumMissile/CumMissile.tscn")
-var cooldown: float = 0.35
+var cooldown: float = 0.25
 
 
 func _init() -> void:

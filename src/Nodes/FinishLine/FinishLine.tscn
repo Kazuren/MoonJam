@@ -8,7 +8,7 @@ extents = Vector2( 16, 48 )
 
 [node name="FinishLine" type="Sprite"]
 texture = ExtResource( 2 )
-offset = Vector2( -24, -64 )
+offset = Vector2( -24, -60 )
 flip_h = true
 script = ExtResource( 1 )
 

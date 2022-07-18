@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/fonts/montreal/Montreal32Bold.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/Scenes/Level 5/Outro/Outro.gd" type="Script" id=2]
-[ext_resource path="res://src/Scenes/_Intro/fancycup1.png" type="Texture" id=3]
+[ext_resource path="res://src/Scenes/Level 5/Outro/notfancycup.png" type="Texture" id=3]
 
 [node name="Outro" type="Control"]
 anchor_right = 1.0
@@ -51,13 +51,9 @@ margin_bottom = 900.0
 color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer"]
-margin_left = 928.0
-margin_top = 508.0
-margin_right = 992.0
-margin_bottom = 572.0
-rect_min_size = Vector2( 64, 64 )
-size_flags_horizontal = 4
-size_flags_vertical = 4
+margin_top = 180.0
+margin_right = 1920.0
+margin_bottom = 900.0
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 6
