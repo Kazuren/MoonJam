@@ -28,6 +28,8 @@ func _ready() -> void:
 
 
 func enter(data: Dictionary = {}) -> void:
+	if !is_instance_valid(boss):
+		return
 	if !is_instance_valid(boss.boss_entity):
 		return
 	
@@ -91,6 +93,10 @@ func enter(data: Dictionary = {}) -> void:
 #print("tentacle")
 
 func create_tentacle_in_ray(ray) -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	var tentacle = Tentacle.instance()
 	add_child(tentacle)
 	tentacles.append(tentacle)
@@ -105,6 +111,10 @@ func create_tentacle_in_ray(ray) -> void:
 
 
 func _on_start_completed() -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	for tentacle in tentacles:
 		
 		var vertical = tentacle.direction == Vector2.DOWN
@@ -122,6 +132,10 @@ func _on_start_completed() -> void:
 
 
 func _on_strike_completed() -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	for tentacle in tentacles:
 		var vertical = tentacle.direction == Vector2.DOWN
 		var offset = 1080 if vertical else 1920

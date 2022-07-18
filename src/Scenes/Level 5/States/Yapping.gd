@@ -32,6 +32,8 @@ func _ready() -> void:
 
 
 func enter(data: Dictionary = {}) -> void:
+	if !is_instance_valid(boss):
+		return
 	if !is_instance_valid(boss.boss_entity):
 		return
 	
@@ -81,6 +83,10 @@ func physics_update(delta: float) -> void:
 
 
 func shoot(bullet) -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	var direction = boss.boss_entity.yapping_position.global_position.direction_to(boss.player.global_position)
 	
 	Events.emit_signal("bullet_created", bullet)

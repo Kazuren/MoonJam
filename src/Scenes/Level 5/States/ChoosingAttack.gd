@@ -87,10 +87,13 @@ func enter(data: Dictionary = {}) -> void:
 		return
 	var timer = tree.create_timer(wait_time_before_attack)
 	timer.connect("timeout", self, "_on_ChooseAttackTimer_timeout", [data], CONNECT_ONESHOT)
-	pass
 
 
 func _on_ChooseAttackTimer_timeout(data) -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	if attacks_done >= 3:
 		switch_horizontal_path()
 		attacks_done = 0

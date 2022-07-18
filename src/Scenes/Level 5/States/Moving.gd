@@ -22,6 +22,8 @@ func _ready() -> void:
 
 
 func enter(data = {}) -> void:
+	if !is_instance_valid(boss):
+		return
 	if !is_instance_valid(boss.boss_entity):
 		return
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
@@ -68,6 +70,10 @@ func enter(data = {}) -> void:
 
 
 func physics_update(delta: float) -> void:
+	if !is_instance_valid(boss):
+		return
+	if !is_instance_valid(boss.boss_entity):
+		return
 	time_passed += delta
 	var t = time_passed / time_required
 	if offset == 0:
