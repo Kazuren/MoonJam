@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kachorpa.png-9b3d783b946fa4946bd6349e19c93db8.stex"
+path="res://.import/borpaded.png-54259f744e18d409271c2d9be6dace1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/kachorpa.png"
-dest_files=[ "res://.import/kachorpa.png-9b3d783b946fa4946bd6349e19c93db8.stex" ]
+source_file="res://Assets/Art/borpaded.png"
+dest_files=[ "res://.import/borpaded.png-54259f744e18d409271c2d9be6dace1a.stex" ]
 
 [params]
 

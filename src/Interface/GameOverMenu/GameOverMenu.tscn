@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/Interface/GameOverMenu/GameOverMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/fonts/montreal/Montreal48Bold.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Assets/Art/deadlole.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Art/borpanotded.png" type="Texture" id=3]
 [ext_resource path="res://Assets/fonts/montreal/Montreal64Bold.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Assets/fonts/montreal/Montreal32Bold.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Assets/Art/borpaded.png" type="Texture" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.984314, 0.572549, 0.235294, 1 )
@@ -40,7 +41,7 @@ corner_detail = 16
 [sub_resource type="Animation" id=4]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("Menu/MarginContainer/VBoxContainer/Panel/Control/TextureRect:frame")
+tracks/0/path = NodePath("Menu/MarginContainer/VBoxContainer/Panel/Control/TextureRect:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -48,14 +49,14 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
+"update": 1,
+"values": [ ExtResource( 3 ) ]
 }
 
 [sub_resource type="Animation" id=5]
 resource_name = "dedlole"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Menu/MarginContainer/VBoxContainer/Panel/Control/TextureRect:frame")
+tracks/0/path = NodePath("Menu/MarginContainer/VBoxContainer/Panel/Control/TextureRect:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -64,7 +65,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ 0, 1 ]
+"values": [ ExtResource( 3 ), ExtResource( 6 ) ]
 }
 
 [node name="GameOverMenu" type="Control"]
@@ -115,6 +116,7 @@ custom_constants/margin_left = 32
 custom_constants/margin_bottom = 64
 
 [node name="RetryButton" type="ToolButton" parent="Menu/MarginContainer"]
+visible = false
 margin_left = 32.0
 margin_top = 408.0
 margin_right = 688.0
@@ -174,7 +176,6 @@ size_flags_horizontal = 6
 
 [node name="TextureRect" type="Sprite" parent="Menu/MarginContainer/VBoxContainer/Panel/Control"]
 texture = ExtResource( 3 )
-hframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 4 )
