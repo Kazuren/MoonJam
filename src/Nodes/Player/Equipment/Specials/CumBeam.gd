@@ -15,7 +15,7 @@ func _init() -> void:
 	self.id = 7
 	self.name = "Cum Beam"
 	self.slot = SLOT.SPECIAL
-	self.gold = 1
+	self.gold = 2
 	self.description = "Borpa fires a powerful vertical beam of cum, greatly damaging any enemy caught in its path"
 	self.texture = load("res://Assets/Art/beam.png")
 

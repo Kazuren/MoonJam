@@ -21,7 +21,7 @@ func _init() -> void:
 	self.slot = SLOT.SPECIAL
 	self.gold = 1
 	self.description = "Shoots a lot of projectiles in the direction you're facing"
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/specialattacc.png")
 
 
 func equip(player) -> void:

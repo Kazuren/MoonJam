@@ -8,7 +8,7 @@ func _init() -> void:
 	self.slot = SLOT.PASSIVE
 	self.gold = 1
 	self.description = "Borpa is immune to damage while dashing."
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/fart1.png")
 
 
 func equip(player) -> void:

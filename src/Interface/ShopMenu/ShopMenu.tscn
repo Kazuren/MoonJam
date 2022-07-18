@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Interface/ShopMenu/ShopMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/fonts/montreal/Montreal48Bold.tres" type="DynamicFont" id=2]
-[ext_resource path="res://src/Interface/GameInterface/heart.tres" type="Texture" id=3]
+[ext_resource path="res://src/Nodes/Coin/coin.png" type="Texture" id=3]
 [ext_resource path="res://src/Interface/InventoryMenu/EquipmentSlot.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/fonts/montreal/Montreal32Bold.tres" type="DynamicFont" id=5]
 

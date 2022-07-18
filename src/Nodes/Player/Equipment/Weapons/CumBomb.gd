@@ -12,7 +12,7 @@ func _init() -> void:
 	self.slot = SLOT.ATTACK
 	self.gold = 1
 	self.description = "Shoots a large ball of cum that explodes upon contact, dealing aoe damage."
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/bomb.png")
 
 
 func equip(player) -> void:

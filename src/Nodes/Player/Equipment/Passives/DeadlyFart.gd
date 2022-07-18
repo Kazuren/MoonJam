@@ -10,7 +10,7 @@ func _init() -> void:
 	self.slot = SLOT.PASSIVE
 	self.gold = 1
 	self.description = "Makes your dash deadly."
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/fart2.png")
 
 
 

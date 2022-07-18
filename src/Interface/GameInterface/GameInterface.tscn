@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/Interface/GameInterface/GameInterface.gd" type="Script" id=1]
 [ext_resource path="res://src/Interface/GameInterface/heart.tres" type="Texture" id=2]
 [ext_resource path="res://src/Interface/GameInterface/cumstack.tres" type="Texture" id=3]
 [ext_resource path="res://Assets/fonts/montreal/Montreal48Bold.tres" type="DynamicFont" id=4]
+[ext_resource path="res://src/Nodes/Coin/coin.png" type="Texture" id=5]
 
 [node name="GameInterface" type="Control"]
 pause_mode = 2
@@ -142,6 +143,6 @@ margin_right = 147.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 64, 64 )
 size_flags_vertical = 4
-texture = ExtResource( 2 )
+texture = ExtResource( 5 )
 expand = true
 stretch_mode = 6
