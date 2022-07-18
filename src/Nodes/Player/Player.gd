@@ -242,6 +242,7 @@ func set_health(value: int) -> void:
 		death_effect.global_position = death_effect_position.global_position
 		death_effect.scale.x = looking_direction
 		visible = false
+		dead = true
 		fart_bar.visible = false
 		disable()
 		state_machine.change("Death")
