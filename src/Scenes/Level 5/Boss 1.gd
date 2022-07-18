@@ -71,7 +71,7 @@ func _on_boss_dead() -> void:
 		current_sfx.stop()
 	disable()
 	if !player.dead:
-		var timer = get_tree().create_timer(0.5, true)
+		var timer = player.get_tree().create_timer(0.5, true)
 		timer.connect("timeout", self, "_on_boss_died_timer_timeout", [], CONNECT_ONESHOT)
 
 
