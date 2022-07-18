@@ -6,7 +6,7 @@ const Beam = preload("res://src/Scenes/Level 5/Beam/Beam.tscn")
 var state_time: float = 3.0
 
 var beams: int = 3
-var activation_time: float = 0.7
+var activation_time: float = 0.65
 var beam_duration: float = 1.0
 
 var attack_delay: float
@@ -25,7 +25,7 @@ func enter(data: Dictionary = {}) -> void:
 	if !is_instance_valid(boss.boss_entity):
 		return
 	if boss.boss_entity.health < boss.boss_entity.max_health / 2:
-		activation_time = 0.6
+		activation_time = 0.55
 		beams = 5
 		state_time = 5.0
 		

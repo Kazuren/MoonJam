@@ -46,9 +46,15 @@ func play_effect(wav: Resource, pitch_scale: float = 1.0, audio_position = null)
 	audio_player.pitch_scale = pitch
 	audio_player.play()
 	active_sfx += 1
-	yield(audio_player, "finished")
+	audio_player.connect("finished", self, "_on_Audio_player_finished", [audio_player, node])
+	audio_player.connect("tree_exiting", self, "_on_Audio_player_tree_exiting")
+
+
+func _on_Audio_player_finished(audio_player, node) -> void:
 	audio_player.queue_free()
 	if node:
 		node.queue_free()
-	active_sfx -= 1
 
+
+func _on_Audio_player_tree_exiting() -> void:
+	active_sfx -= 1

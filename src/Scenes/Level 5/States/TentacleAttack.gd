@@ -16,7 +16,7 @@ var tentacle_pull_back_time: float = 1.0
 var tentacle_pull_back_delay_time: float = 1.0
 var horizontal_tentacle_count: int = 1
 var vertical_tentacle_count: int = 4
-	
+
 
 onready var tween = $Tween
 

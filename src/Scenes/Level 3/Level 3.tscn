@@ -44,7 +44,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=17]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 154, 974, 0, 0, 0, 0, 702, 976 )
+"points": PoolVector2Array( 0, 0, 0, 0, 124, 686, 0, 0, 0, 0, 700, 686 )
 }
 
 [sub_resource type="Curve2D" id=18]
@@ -454,7 +454,7 @@ Bullet = ExtResource( 9 )
 variable_y_value = true
 
 [node name="FlapperSpawn5" parent="SpawnPoints" instance=ExtResource( 14 )]
-position = Vector2( 4060, 672 )
+position = Vector2( 4032, 384 )
 enemy_scene = ExtResource( 4 )
 looking_direction = -1
 cooldown = 1.5
