@@ -46,7 +46,7 @@ _data = {
 script = ExtResource( 4 )
 unlocks = 69
 id = 5
-best_time = 90.0
+best_time = 66.9
 music = ExtResource( 13 )
 
 [node name="Background" type="CanvasLayer" parent="."]
