@@ -159,7 +159,6 @@ position = Vector2( 3808, 480 )
 position = Vector2( 8512, 640 )
 
 [node name="SpawnPoints" type="Node2D" parent="."]
-visible = false
 
 [node name="SnorpaSpawn2" parent="SpawnPoints" instance=ExtResource( 14 )]
 position = Vector2( 706, 768 )
