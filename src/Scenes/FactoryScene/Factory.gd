@@ -16,7 +16,8 @@ var text = [
 	"Eddie: Good job young Borpa.",
 	"Eddie: Now you just need to go to the computer, open their navigation software, and set your location to 69, 73, 420.",
 	"Eddie: That’ll land you very close to the location of the Giga Cum Chalice of Hell 2.",
-	"Eddie: The journey is not yet over. Reaching the chalice itself from there will be a challenge in its own right.",
+	"Eddie: The journey is not yet over.",
+	"Eddie: Reaching the chalice itself from there will be a challenge in its own right.",
 	"Eddie: Good luck young Borpa.",
 ]
 

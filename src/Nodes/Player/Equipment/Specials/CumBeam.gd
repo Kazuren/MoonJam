@@ -17,7 +17,7 @@ func _init() -> void:
 	self.slot = SLOT.SPECIAL
 	self.gold = 1
 	self.description = "Borpa fires a powerful vertical beam of cum, greatly damaging any enemy caught in its path"
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/beam.png")
 
 
 func equip(player) -> void:

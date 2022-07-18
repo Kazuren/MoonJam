@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://src/Interface/GameInterface/heart.tres" type="Texture" id=1]
+[ext_resource path="res://Assets/Art/beam.png" type="Texture" id=1]
 [ext_resource path="res://src/Interface/InventoryMenu/EquipmentSlot.gd" type="Script" id=2]
 [ext_resource path="res://Assets/fonts/montreal/Montreal32Bold.tres" type="DynamicFont" id=3]
 
@@ -23,7 +23,7 @@ expand_margin_top = 3.0
 expand_margin_bottom = 3.0
 
 [sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.831373, 0.831373, 0.847059, 1 )
+bg_color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
 border_width_left = 1
 border_width_top = 1
 border_width_right = 1
@@ -43,8 +43,7 @@ corner_radius_bottom_right = 64
 corner_radius_bottom_left = 64
 
 [node name="EquipmentSlot" type="Panel"]
-margin_left = 280.0
-margin_right = 376.0
+margin_right = 96.0
 margin_bottom = 96.0
 rect_min_size = Vector2( 96, 96 )
 focus_mode = 2

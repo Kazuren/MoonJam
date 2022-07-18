@@ -10,7 +10,7 @@ func _init() -> void:
 	self.slot = SLOT.ATTACK
 	self.gold = 1
 	self.description = "Borpa’s signature weapon. Shoots pellets of cum that damage enemies."
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/Pellet.png")
 
 
 func equip(player) -> void:

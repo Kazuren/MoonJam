@@ -236,8 +236,6 @@ custom_constants/hseparation = 32
 columns = 8
 
 [node name="EquipmentSlot" parent="Menu/Inventory/VBoxContainer/EquipmentSlotContainer" instance=ExtResource( 4 )]
-margin_left = 0.0
-margin_right = 96.0
 custom_styles/panel = SubResource( 4 )
 
 [node name="EquipmentSlot2" parent="Menu/Inventory/VBoxContainer/EquipmentSlotContainer" instance=ExtResource( 4 )]

@@ -20,6 +20,8 @@ var text = [
 	"Surely this would be his swan song, the pinnacle of all his adventures…"
 ]
 
+
+const music = preload("res://Assets/Audio/Music/devil_intro_35sec.wav")
 const swap_texture = preload("res://src/Scenes/_Intro/fancycup1.png")
 
 var ended: bool = false
@@ -29,6 +31,7 @@ onready var label = $BlackBar2/MarginContainer/TextLabel
 
 
 func _ready() -> void:
+	Audio.play_music(music)
 	# play music here
 	label.text = text[text_index]
 	label.percent_visible = 0

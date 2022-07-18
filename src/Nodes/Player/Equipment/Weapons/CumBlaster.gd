@@ -13,7 +13,7 @@ func _init() -> void:
 	self.slot = SLOT.ATTACK
 	self.gold = 1
 	self.description = "Rapidly fires 3 short-range cum bullets."
-	self.texture = load("res://src/Interface/GameInterface/heart.tres")
+	self.texture = load("res://Assets/Art/shotgunpellets.png")
 
 
 func equip(player) -> void:
