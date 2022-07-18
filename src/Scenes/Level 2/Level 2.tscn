@@ -478,11 +478,11 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn2" parent="SpawnPoints" instance=ExtResource( 2 )]
-position = Vector2( 1556, 1184 )
+position = Vector2( 1472, 1216 )
 enemy_scene = ExtResource( 14 )
 parent_path = NodePath("../../Enemies")
 pause_off_screen = false
@@ -494,11 +494,11 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath2")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn3" parent="SpawnPoints" instance=ExtResource( 2 )]
-position = Vector2( 1680, 1220 )
+position = Vector2( 1536, 1216 )
 enemy_scene = ExtResource( 14 )
 cooldown_offset = 1.0
 parent_path = NodePath("../../Enemies")
@@ -511,11 +511,11 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath3")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn4" parent="SpawnPoints" instance=ExtResource( 2 )]
-position = Vector2( 1772, 1210 )
+position = Vector2( 1576, 1216 )
 enemy_scene = ExtResource( 14 )
 cooldown_offset = 1.0
 parent_path = NodePath("../../Enemies")
@@ -528,11 +528,11 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath4")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn5" parent="SpawnPoints" instance=ExtResource( 2 )]
-position = Vector2( 1884, 1184 )
+position = Vector2( 1808, 1208 )
 enemy_scene = ExtResource( 14 )
 parent_path = NodePath("../../Enemies")
 pause_off_screen = false
@@ -544,7 +544,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath5")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn6" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -560,7 +560,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath6")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn7" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -577,7 +577,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath7")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn8" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -593,7 +593,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath8")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn9" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -610,7 +610,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath9")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn10" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -626,7 +626,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath10")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn11" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -643,7 +643,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath11")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn12" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -659,7 +659,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath12")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="FishMoleySpawn13" parent="SpawnPoints" instance=ExtResource( 2 )]
@@ -676,7 +676,7 @@ script = ExtResource( 15 )
 path_node_path = NodePath("../../../../Enemies/Paths/FishMoleyPath13")
 rotate = true
 use_unit_offset = true
-time_required = 1.2
+time_required = 1.4
 ease_curve = -0.6
 
 [node name="Enemies" type="Node2D" parent="."]

@@ -123,6 +123,6 @@ margin_bottom = 128.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 4 )
-text = "PotentialNova: Music, Art"
+text = "PotentialNova: Music, Art, SFX"
 align = 2
 valign = 2

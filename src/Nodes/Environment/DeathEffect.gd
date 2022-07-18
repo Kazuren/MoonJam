@@ -10,7 +10,7 @@ func initialize(sprite: Texture, s: Vector2 = Vector2(1, 1)) -> void:
 	)
 	process_material.set_shader_param("sprite", sprite)
 	
-	amount = (w * h) / 2
+	amount = max(1, (w * h) / 2)
 	emitting = true
 
 
