@@ -23,8 +23,6 @@ var text = [
 ]
 
 
-
-
 var ended: bool = false
 
 onready var texture_rect = $MarginContainer/TextureRect
