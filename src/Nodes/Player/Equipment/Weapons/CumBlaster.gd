@@ -2,7 +2,7 @@ extends Equipment
 
 const SmallCumBullet = preload("res://src/Nodes/Environment/Projectiles/SmallCumBullet/SmallCumBullet.tscn")
 
-var cooldown: float = 0.0667
+var cooldown: float = 0.1
 var angles: Array = [
 	-11.25, 0, 11.25
 ]
