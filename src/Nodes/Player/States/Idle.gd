@@ -49,7 +49,7 @@ func physics_update(delta: float) -> void:
 			var platform1 = player.ray1.get_collider()
 			var platform2 = player.ray2.get_collider()
 			if (platform1 and platform1 is OneWayPlatform) or (platform2 and platform2 is OneWayPlatform):
-				player.position.y += 1
+				player.position.y += 2
 				state_machine.change("Air")
 				return
 	else:
